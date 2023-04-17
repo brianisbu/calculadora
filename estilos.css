@@ -1,0 +1,180 @@
+body{
+    display: grid;
+    place-items: center;
+    word-wrap: break-word;
+}
+
+#calculadora{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: 10px 10px 30px black;
+}
+
+#window{
+    
+    display: grid;
+    grid-column: 1/5;
+    text-align: end;
+
+    border-radius: 20px;
+    height: 120px;
+    margin-bottom: 10px;
+    padding: 15px;
+
+}
+
+.red{
+    color: rgb(211, 6, 6);
+}
+
+#modo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#modo:hover{  
+    height: 45px;
+    width: 45px;
+    margin: 0;
+}
+
+
+
+span{
+    font-size: 50px;
+}
+
+.btn{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+#igual{
+    grid-row: span 2;
+
+    width: 120px;
+    height: 250px;
+    border-radius: 70px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#borrar, #cancelar{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+button{
+    border: none;
+    transition: 0.3s;
+    margin: 5px;
+    font-size: 25px;
+    align-content: center;
+}
+
+.btn:hover{
+    width: 125px;
+    height: 125px;
+    margin: 0px;
+}
+
+#igual:hover{
+    width: 130px;
+    height: 260px;
+    margin: 0px;
+}
+
+#borrar:hover{
+    width: 125px;
+    height: 125px;
+    margin: 0px;
+}
+
+#cancelar:hover{
+    width: 125px;
+    height: 125px;
+    margin: 0px;
+}
+
+/*Modo claro*/
+
+.calculo-claro{
+    background-color: #84b6f4;
+}
+
+.resul-claro{
+    background-color: #67ca67;
+}
+.cancelar-claro{
+    background-color: #ff6961;
+}
+.modo-claro{
+    background-color: rgb(233, 155, 178);
+}
+
+.body-claro{
+    background-color:rgb(233, 212, 186);
+}
+
+.window-claro{  
+    background-color: aliceblue;
+}
+
+.calculadora-claro{   
+    background-color: aquamarine;
+}
+
+
+/*Modo Oscuro*/
+
+.body-oscuro{
+    background-color: #303030;
+}
+
+.calculadora-oscuro{
+    background-color: #4A4A4A;
+}
+
+
+.calculo-oscuro{
+    background-color: #22B14C;
+    color:white
+}
+
+.nm-oscuro{
+    background-color: rgb(48, 44, 44);
+    color: white;
+}
+
+.resul-oscuro{
+    background-color: #22B14C;
+    color:white
+}
+
+.cancelar-oscuro{
+    background-color: #b41015;
+    color:white;
+}
+
+.window-oscuro{
+    background-color: #7F7F7F;
+    color: white;
+}
+
+.modo-oscuro{
+    background-color: #22B14C;
+    filter:saturate(100%) invert(100%) hue-rotate(201deg) brightness(104%) contrast(102%);
+}
